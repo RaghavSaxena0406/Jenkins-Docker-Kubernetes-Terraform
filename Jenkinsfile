@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     environment {
-        ACR_NAME = 'acrrathore01'
+        ACR_NAME = 'acrraghav2025'
         AZURE_CREDENTIALS_ID = 'jenkins-pipeline-sp'
         ACR_LOGIN_SERVER = "${ACR_NAME}.azurecr.io"
         IMAGE_NAME = 'webapidocker1'
         IMAGE_TAG = 'latest'
-        RESOURCE_GROUP = 'myResourceGroup'
+        RESOURCE_GROUP = 'myResourceGroup2025'
         AKS_CLUSTER = 'myAKSCluster'
         TF_WORKING_DIR = '.'
     }
@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Aryan-Raj-Singh-Rathore/Jenkins-Docker-Kubernetes-Terraform.git'
+                git branch: 'main', url: 'https://github.com/RaghavSaxena0406/Jenkins-Docker-Kubernetes-Terraform.git'
             }
         }
 
